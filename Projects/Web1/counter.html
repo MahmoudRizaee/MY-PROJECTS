@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter Scroll</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .spacer {
+      height: 100vh;
+    }
+    .counter-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 100px 0;
+      background-color: #f5f5f5;
+    }
+    .counter-box {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spacer"></div> <!-- برای اینکه اسکرول داشته باشیم -->
+
+  <div class="counter-section">
+    <div class="counter-box">
+      <span class="counter" data-target="13000">0</span><span>+</span>
+      <p>Projects Done</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="9000">0</span><span>+</span>
+      <p>Consulted</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="12000">0</span><span>+</span>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+
+  <div class="spacer"></div> <!-- برای اسکرول پایین‌تر -->
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    let hasStarted = false;
+
+    const startCounting = () => {
+      counters.forEach(el => {
+        const target = +el.getAttribute('data-target');
+        let count = 0;
+        const step = Math.ceil(target / 100);
+
+        const updateCount = () => {
+          count += step;
+          if (count < target) {
+            el.innerText = count.toLocaleString();
+            requestAnimationFrame(updateCount);
+          } else {
+            el.innerText = target.toLocaleString();
+          }
+        };
+
+        updateCount();
+      });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !hasStarted) {
+          hasStarted = true;
+          startCounting();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('.counter-section'));
+  </script>
+</body>
+</html>

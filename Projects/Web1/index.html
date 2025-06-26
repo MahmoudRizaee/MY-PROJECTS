@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <header>
@@ -14,7 +15,8 @@
                 <div class="links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#">Our Service</a>
+                    <a href="#www">Our Service</a>
+                    <a href="#xxx">Our Service</a>
                 </div>
                 <div class="icon">
                     <ruby>
@@ -33,7 +35,7 @@
         <section class="sec1" id="home" >
             <h1 class="anima_h1" id="h1_pro">Business Gaols <br> Achived With Design</h1>
             <div class="anima_p1" id="p1_pro">
-                <p >
+                <p id="para_sec1">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perspiciatis modi deleniti voluptas repudiandae, dolorum quidem sunt, debitis illum, recusandae nulla minus. Ad minus magnam officiis debitis possimus, tempore nobis.
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perspiciatis modi deleniti voluptas repudiandae, dolorum quidem sunt, debitis illum, recusandae nulla minus. Ad minus magnam officiis debitis possimus, tempore nobis.
                 </p>
@@ -42,9 +44,9 @@
                 <button>Start Now</button>
             </div>
             <div class="imgaes anima_img" id="img_pro">
-                <img src="../images/sly of forest.jpg" id="img1" alt="image">
-                <img src="../images/sly of forest.jpg" id="img2" alt="image">
-                <img src="../images/sly of forest.jpg" id="img3" alt="image">
+                <img src="./images/sly of forest.jpg" id="img1" alt="image">
+                <img src="./images/restaurant.jpg" id="img2" alt="image">
+                <img src="./images/aerial-beautiful-shot-seashore-with-hills-background-sunset.jpg" id="img3" alt="image">
             </div>
         </section>
 
@@ -59,19 +61,166 @@
                 <div class="container">
                     <div class="item1">
                         <h3>Research</h3>
-                        <p dir="ltr">
-                            Lorem ipsum, dolor sit amet con repellat architecto asperiores harum ratione porro nihil! In, ex!
+                        <p dir="ltr" class="readmore-box">
+                                Lorem ipsum, dolor sit amet con repellat architecto asperiores harum ratione porro nihil! In, ex!
+                            <span class="dots">...</span>
+                            <!-- <span class="more">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt molestias natus magnam ipsum sed, architecto omnis obcaecati dolores ab explicabo voluptatum officia facilis est cumque quos quidem nobis eum eaque.
+                            </span> -->
                         </p>
-                        <a href="#">Read More></a>
+                        <button onclick="myredmor()" class="mybtn"><span class="btn-icon">Read More</span></button>
                     </div>
-                    <div class="item2">2</div>
+                    <div class="item2">
+                        <h3>Product Design</h3>
+                        <p dir="ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum dolorum nihil aut blanditiis, veritatis quia molestias saepe non</p>
+                        <button><span>Read More</span></button>
+                    </div>
                 </div>
                 <div class="container1">
-                    <div class="item7">3</div>
-                    <div class="item8">4</div>
+                    <div class="item7">
+                        <h3>Media Promotion</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore in rem, explicabo suscipit corrupti ullam magnam iste culpa beatae ipsam nihil consequatur quaerat praesentium vero ad dolorum unde quidem.
+                        </p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="item8">
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores sunt officia nesciunt odit facere facilis sequi libero necessitatibus reiciendis? Eum?
+                        </p>
+                        <button>Read More</button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="sec3" id="www">
+            <div class="suma">
+                <div class="anim_vid" id="vid_pro">
+                    <video controls src="./Images/6034682_Business_Up_3840x2160.mp4"></video>
+                </div>
+                <div class="anim_txx" id="txt_pro">
+                        <h3>Making <br> Progress Above</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere nostrum reprehenderit blanditiis numquam? Nihil debitis voluptatibus quidem. Consequuntur, libero tempore quas iusto cum similique accusantium molestias error illum consectetur!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit provident numquam iusto voluptas in ducimus amet quisquam corrupti, soluta autem voluptatibus magni maxime. Cupiditate ad iure dignissimos inventore animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quam dolore eaque, assumenda illo optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab.
+                        </p>
+                </div>
+            </div>
+                <div class="counter-section" id="counter_pro">
+                    <div class="counter-box">
+                        <span class="counter" data-target="13000">0</span><span>+</span>
+                        <p class="pwp">Projects Done</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter" data-target="9000">0</span><span>+</span>
+                        <p class="pwp">Consulted</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter" data-target="12000">0</span><span>+</span>
+                        <p class="pwp">Happy Clients</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="sec4" id="">
+            <h3 class="head_sec4a" id="abc_sec4">Make Your Company More Atractive With Us</h3>
+            <div class="sec4_element">
+                <div class="img_sec4" id="img_abc">
+                    <img src="./Images/sly of forest.jpg" alt="image-of-bomb">
+                </div>
+                <div class="head_sec4" id="elem1">
+                    <h3>Make Your Brand <br> Grate</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error! Sed beatae aliquid accusantium qui tempora saepe est, cum aut, provident culpa vero dicta obcaecati consectetur, odit neque labore nobis? Id rerum, modi excepturi amet ea earum natus ex tempora! Beatae quia minima, itaque commodi omnis doloribus! Dolor inventore quidem atque consequatur similique veniam molestias praesentium libero veritatis, eos provident cumque quia esse et explicabo vel nulla maiores culpa amet possimus quod officiis dicta deserunt. Corrupti dicta, quae rem voluptatem quos assumenda esse mollitia, voluptatibus ab aliquid delectus molestias, itaque hic sequi asperiores sint totam quisquam error labore suscipit repellat?
+                    </p>
+                    <button>Start Now</button>
+                </div>
+                <div class="last_img_sec4" id="elem2">
+                    <div>
+                        <img src="./Images/restaurant.jpg" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta officiis deleniti saepe ducimus rerum iure ur adipisicing elit. Dicta officiis deleniti saepe ducimus rerum iure ur adipisicing elit. Dicta officiis deleniti saepe ducimus rerum iure quod soluta perspiciatis obcaecati sunt fuga voluptate, ut repudiandae at, itaque ipsa magni minus consectetur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec5" id="vvv">
+            <div class="prt1" id="nnn">
+                <div class="img-cover">
+                    <img src="./Images/1331897.jpeg"alt="">
+                </div>
+            </div>
+            <div class="prt2" id="ooo">
+                <h3>What Our Clints <br> Say About US</h3>
+                <span>,,</span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus, inventore quo expedita repudiandae, ad itaque cupiditate eaque libero dignissimos, repellat dolor vel commodi tenetur aliquam sunt. Ratione blanditiis atque, itaque totam hic porro, harum, voluptate officiis nemo qui laudantium ab! Quae architecto aliquid numquam fugiat veniam quia nemo error. Eum distinctio, officia id magnam magni delectus soluta ipsa autem unde consectetur voluptatum ab aut sapiente est consequatur eligendi ut provident animi omnis quia sit iusto beatae deleniti placeat. Eveniet corporis veritatis excepturi delectus nemo quidem expedita laudantium numquam quasi hic! Illo nam iusto pariatur consequatur laborum doloremque quidem quisquam aperiam. Alias impedit blanditiis a aliquam maiores obcaecati eum mollitia?
+                </p>
+            </div>
+        </section>
+
+        <section class="sec6">
+            <div class="pot1" id="eee">
+                <h3 class="hh3" id="ddra">Join Our Daily <br> Newsletter</h3>
+                <div class="para_sec6" id="aa2">
+                    <p class="pp1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, maxime?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, rerum, sit asperiores ex harum, odit aliquid ea beatae eveniet culpa a? Consectetur laudantium saepe omnis quae maxime ducimus voluptate dolorem.
+                    </p>
+                </div>
+                <form action="post">
+                    <label for="gmail" class="label" id="aa3">Enter Email Here:</label>
+                    <div class="int" id="aa4">
+                        <input type="email" name="gmail" id="gmail" value="" placeholder="Yourmail@Hotmail.com" className=""  required>
+                        <button type="submit" className="">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="pot2" id="ggg">
+                <img src="./Images/454644.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="footer" id="xxx">
+            <div>
+                <h3>Grape</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut ex blanditiis obcaecati eius, molestiae natus quam delectus ullam. Ducimus repellat ullam labore modi numquam quisquam optio sapiente architecto excepturi?
+                </p>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <p>Luxury Brands</p>
+                <p>Original Products</p>
+                <p>Free Return</p>
+            </div>
+            <div>
+                <h3>About Us</h3>
+                <p>Contact us</p>
+                <p>News & Accolades</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h4>Get Connected</h4>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt' ></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-linkedin-square' ></i>
+                <i class='bx bxs-right-arrow'></i>
+                <i class='bx bxs-left-arrow' ></i>
+                <i class='bx bx-toggle-right' ></i>
+                <i class='bx bx-toggle-left' ></i>
+            </div>
+        </section>
+
+        <!-- <section>
+            <h6 class="outlined-text">Hello Mahmoud This is Good idea to set into your Projects</h6>
+        </section> -->
         <script src="./script.js" async defer></script>
     </body>
 </html>

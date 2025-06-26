@@ -27,6 +27,11 @@ header{
     border-radius: 8px;
     overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+    header{
+        background-color: red;
+    }
+}
 .anima_nav{
     opacity: 0;
     transform: translateX(70px);
@@ -120,6 +125,7 @@ section{
 }
 .sec1 p{
     background: transparent;
+    line-height: 15px;
 }
 .anima_p1{
     width: 65vw;
@@ -213,7 +219,7 @@ section{
 .anima_h2{
     opacity: 0;
     translate: 0 70px;
-    transition: all 0.7s ease-in-out;
+    transition: all 1.2s ease-in-out;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -252,6 +258,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
+    overflow: hidden;
 }
 .item1 h3{
     background-color: transparent;
@@ -262,9 +269,10 @@ section{
     background-color: transparent;
     color: gray;
 }
-.item1 a {
-    margin-left: -14rem;
-    margin-top: 2rem;
+.item2 p{
+    text-align: start;
+    width: 100%;
+    background-color: transparent;
     color: gray;
 }
 .container1{
@@ -275,6 +283,66 @@ section{
     gap: 1rem;
     background-color: transparent;
 }
+.item1 button {
+    margin-left: -12.9rem;
+    margin-top: 2rem;
+    color: gray;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: linear-gradient(to right, #c31432 , #340b36);
+    border-radius: 5px;
+    color: white;
+}
+.item1 button span{
+    background: linear-gradient(to right, #c31432 , #340b36);
+}
+.item2 button {
+    margin-left: -39.9rem;
+    margin-top: 3.2rem;
+    color: gray;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: linear-gradient(to right, #c31432 , #340b36);
+    border-radius: 5px;
+    color: white;
+}
+.item2 button span{
+    background: linear-gradient(to right, #c31432 , #340b36);
+}
+.item7{
+    background-color: #641323;
+}
+.item7 h3{
+    background-color: transparent;
+    color: white;
+}
+.item7 p {
+    text-align: start;
+    width: 100%;
+    color: rgb(193, 192, 192);
+}
+.item7 button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: -39.9rem;
+    margin-top: 2rem;
+}
+.item8 button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: -12.9rem;
+    margin-top: 2rem;
+    color: white;
+    background: linear-gradient(to right, #c31432 , #340b36);
+}
+.item8 p{
+    text-align: start;
+    width: 100%;
+}
 .item7,
 .item8{
     margin-top: 1rem;
@@ -282,7 +350,7 @@ section{
 .anima_temp{
     opacity: 0;
     translate: 0 70px;
-    transition: all 0.7s ease-in-out;
+    transition: all 1.5s ease-in-out;
     background-color: transparent;
 }
 .visible_temp{
@@ -290,5 +358,485 @@ section{
     translate: 0 0;
 }
 
+/* ---------------------------Section3---------------------------- */
+.sec3{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.suma{
+    width: 80%;
+    height: 55%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 55% 45%;
+    gap: 4rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.anim_vid video{
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+}
+.anim_vid{
+    overflow: hidden;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: all 1.6s ease-in-out;
+    background-color: transparent;
+    border-radius: 2rem;
+}
+.visible_vid{
+    opacity: 1;
+    transform: translateX(0);
+}
+.anim_txx{
+    overflow: auto;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(150px);
+    transition: all 1.2s ease-in-out;
+    background-color: transparent;
+}
+.visible_txt{
+    opacity: 1;
+    transform: translateX(0);
+}
+.anim_txx{
+    width: 100%;
+    height: 100%;
+}
+
+.anim_txx h3{
+    font-size: 4rem;
+    background-color: transparent;
+}
+.anim_txx p{
+    font-size: 1rem;
+    color:gray;
+    background-color: transparent;
+    margin-top: 2rem;
+}
+.counter-section{
+    width: 80%;
+    margin-top: 6rem;
+    height: 25dvh;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.7s ease-in-out;
+    background-color: transparent;
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    /* margin: 100px 0;
+    padding: 100px 0; */
+    background-color: transparent;
+}
+.counter-box {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+.counter-box span, .pwp{
+    color: transparent;
+    background: linear-gradient(to right, #c31432 , #340b36);
+    background-clip: text;
+}
+.visible_cnter{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------------------Section4---------------------------- */
+.sec4{
+    padding-top: 90px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100dvh;
+    overflow: hidden;
+}
+.sec4 .head_sec4a{
+    font-size: 3rem;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.head_sec4a{
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 0.7s ease-in-out;
+}
+.visible_head_sec4a{
+    opacity: 1;
+    transform: translateY(0);
+}
+.sec4_element{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 80vw;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.img_sec4{
+    width: 100%;
+    height: 70dvh;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1.5s ease-in-out;
+}
+.visible_iii{
+    opacity: 1;
+    transform: translateX(0);
+}
+.img_sec4 img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.head_sec4{
+    height: 55dvh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: start;
+    overflow: hidden;
+    margin-top: 4.5rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease-in-out;
+    }
+.visible_ii{
+opacity: 1;
+transform: translateY(0);
+}
+.head_sec4 h3{
+    font-size: 2rem;
+    background-color: transparent;
+    width: 100%;
+}
+.head_sec4 p{
+    font-size: 1rem;
+    background-color: transparent;
+    color: gray;
+}
+.head_sec4 button{
+    width: 8rem;
+    height: 2.7rem;
+    border: none;
+    background: linear-gradient(to right, #c31432,#240b36);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.last_img_sec4{
+    overflow: auto;
+    display: grid;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 58dvh;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1.5s ease-in-out;
+    }
+.visible_i{
+    opacity: 1;
+    transform: translateX(0);
+}
+.last_img_sec4 div{
+    width: 90%;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 0.5rem 3rem 0.5rem 3rem;
+    height: 38dvh;
+    margin: 1.2rem;
+}
+.last_img_sec4 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.last_img_sec4 p{
+    color: gray;
+    background-color: transparent;
+    margin: 0 1.4rem 0 1.4rem;
+}
+/* ---------------------------Section5---------------------------- */
+.sec5{
+    padding-top: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100dvh; */
+    overflow: hidden;
+}
+.prt1{
+    width: 40vw;
+    height: 70dvh;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 1.5s ease-in-out;
+}
+.visible_nnn{
+    opacity: 1;
+    transform: translateX(0);
+}
+.prt1 .img-cover{
+    width: 20%;
+    height: 80%;
+    border-left: 2rem solid black;
+    border-top: 2rem solid black;
+    border-bottom: 2rem solid black;
+}
+.prt1 .img-cover img{
+    object-fit: cover;
+    width: 30rem;
+    height: 100%;
+}
+.prt2 {
+    width: 40vw;
+    overflow: hidden;
+    height: 60dvh;
+    background-size: cover;
+    background-color: transparent;
+    display: grid;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 1.5s ease-in-out;
+}
+.visible_ooo{
+    opacity: 1;
+    transform: translateY(0);
+}
+.prt2 h3, span, p{
+    background-color: transparent;
+}
+.prt2 h3{
+    font-size: 3rem;
+}
+.prt2 span{
+    font-size: 5rem;
+}
+/* ---------------------------Section6---------------------------- */
+.sec6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 90px;
+    overflow: hidden;
+}
+.pot1{
+    width: 40vw;
+    height: 70dvh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.pot1 .hh3{
+    font-size: 4rem;
+    background-color: transparent;
+}
+.hh3{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1.2s ease-in-out;
+}
+.visible_em{
+    opacity: 1;
+    transform: translateX(0);
+}
+.para_sec6{
+    height: 70%;
+    overflow: hidden;
+    background-color: transparent;
+    align-content: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 2.2s ease-in-out;
+}
+.visible_aa2{
+    opacity: 1;
+    transform: translateX(0);
+}
+.pot1 .pp1{
+    color: rgb(105, 104, 104);
+    margin-bottom: 7rem;
+}
+.pot1 form{
+    /* border: 2px solid red; */
+    height: 30dvh;
+    width: 35vw;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+}
+.pot1 label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    background-color: transparent;
+}
+.label{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 2.5s ease-in-out;
+}
+.visible_aa3{
+    opacity: 1;
+    transform: translateX(0);
+}
+.pot1 .int{
+    /* border: 2px solid red; */
+    width: 25vw;
+    display: flex;
+    background-color: transparent;
+}
+.int{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 2.9s ease-in-out;
+}
+.visible_aa4{
+    opacity: 1;
+    transform: translateX(0);
+}
+.pot1 input{
+    padding: 0.5rem 4rem;
+    border: none;
+}
+.pot1 button{
+    padding: 0.7rem 1.8rem;
+    border: 2px solid red;
+    border: none;
+    background: linear-gradient(to right, #c31432,#240b36);
+    font-weight: bold;
+    color: wheat;
+}
+.pot2{
+    width: 40vw;
+    height: 70dvh;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(250px);
+    transition: all 2s ease-in-out;
+}
+.visible_pot2{
+    opacity: 1;
+    transform: translateY(0);
+}
+.pot2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+/* ---------------------------Section footer---------------------------- */
+.footer{
+    height: 40dvh;
+    padding-top: 80px;
+    background-color: rgba(235, 235, 222, 0.867);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 2px solid red;
+    justify-content: center;
+    align-content: start;
+    padding-left: 4rem;
+    /* padding-right: 4rem; */
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer div, h3, h4 ,p{
+    background-color: transparent;
+}
 
 
+
+
+h6{
+    font-size: 2rem;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outlined-text {
+    /* font-size: 80px; */
+    /* font-weight: bold; */
+    color: transparent;
+    text-transform: uppercase;
+
+    /* تکنیک ترکیبی گرادینت و استروک */
+    /* background: linear-gradient(270deg, #ff0057, #00f0ff, #00ff88, #ff0057); */
+    background: linear-gradient(to right, #c31432,#240b36);
+
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-stroke: 2px transparent;
+    animation: gradientStroke 6s ease infinite, pulse 1.8s infinite ease-in-out;
+  }
+
+  @keyframes gradientStroke {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }

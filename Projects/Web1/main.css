@@ -1,0 +1,36 @@
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+    --card-bg: #ffffff;
+    --shodow: rgba(0, 0, 0, 0.05);
+}
+body .dark{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    .card{
+        background-color: var(--card-bg);
+    }
+    box-shadow: var(--shodow);
+}
+/* body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 100vw;
+    height: 100dvh;
+    border: 4px solid red;
+    margin: 40px;
+} */
+.card{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid red;
+    object-fit: cover;
+}

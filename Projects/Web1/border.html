@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>انیمیشن متن بوردر</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .outlined-text {
+      font-size: 80px;
+      font-weight: bold;
+      color: transparent;
+      -webkit-text-stroke: 2px white;
+      text-transform: uppercase;
+      animation: strokeColorChange 3s infinite alternate,
+                 pulse 1.5s infinite ease-in-out;
+    }
+
+    /* انیمیشن تغییر رنگ بوردر متن */
+    @keyframes strokeColorChange {
+      0% {
+        -webkit-text-stroke-color: white;
+        text-stroke-color: white; /* برای مرورگرهای دیگه */
+      }
+      50% {
+        -webkit-text-stroke-color: #00bfff; /* آبی روشن */
+        text-stroke-color: #00bfff;
+      }
+      100% {
+        -webkit-text-stroke-color: white;
+        text-stroke-color: white;
+      }
+    }
+
+    /* انیمیشن بتپیدن (بزرگ و کوچک شدن متن) */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1 class="outlined-text">Mahmoud</h1> -->
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>گرادینت بوردر متن</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .outlined-text {
+      font-size: 80px;
+      font-weight: bold;
+      color: transparent;
+      text-transform: uppercase;
+
+      /* تکنیک ترکیبی گرادینت و استروک */
+      background: linear-gradient(270deg, #ff0057, #00f0ff, #00ff88, #ff0057);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      -webkit-text-stroke: 2px transparent;
+      animation: gradientStroke 6s ease infinite, pulse 1.8s infinite ease-in-out;
+    }
+
+    @keyframes gradientStroke {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="outlined-text">Mahmoud</h1>
+</body>
+</html>
+
