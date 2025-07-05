@@ -238,3 +238,35 @@ window.addEventListener("scroll", () => {
         ggg.classList.add("visible_pot2")
     }
 })
+
+// Animation for footer:
+window.addEventListener("scroll", () => {
+    const footer1 = document.getElementById("footer1");
+    const position = footer1.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0){
+        footer1.classList.add("visible_foot")
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
