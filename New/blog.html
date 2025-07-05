@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazone Educational Center</title>
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link swiperJS.css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Linking Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Choices.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+
+<!-- Developed by Mahmoud Rizaee -->
+
+<body>
+    <div class="scrol"><a href="#"><i class='bx bx-right-arrow-alt' ></i></a></div>
+    <!-- Header  -->
+    <div class="header-home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo-yellow.svg" alt="">
+                </a>
+                <!-- <button><a href=""></a></button> -->
+            </div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="Courses.html">Courses</a>
+                <a href="#">Porgrams & Services</a>
+                <a href="Verfiy.html">Verfiy Certificate</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Partners</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="btn-container"><a href="Login.html" class="btn-effect-5">Log In</a></div>
+        </div>
+    </div>
+    <section class="blog-last">
+        <div class="header-blog">
+            <h1>News & Announcements</h1>
+            <p>Stay updated with latest announcements, events, and important dates</p>
+        </div>
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search news..." oninput="filterNews()" />
+            <select id="categoryFilter" multiple aria-label="Filter by category">
+                <option value="student life">Student Life</option>
+                <option value="teaching tips">Teaching Tips</option>
+                <option value="events">Events</option>
+                <option value="exam times">Exam Times</option>
+                <option value="rules">Rules</option>
+                <option value="special events">Special Events</option>
+            </select>
+            <select id="authorFilter" aria-label="Filter by author">
+                <option value="">All Authors</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+    <section class="news-grid" id="newsGrid">
+        <article class="news-card" data-category="student life" data-title="Back to School Tips" data-author="student">
+            <div class="news-media">
+                <img src="./assets/image/course/20.png" alt="Back to school" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Student Life</div>
+                <h2 class="news-title">Back to School Tips</h2>
+                <div class="news-meta">By Student | Published: 2025-07-01</div>
+                <p class="news-description">Tips for students to get prepared for the new school year with confidence and success.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="special events" data-title="Graduation Ceremony" data-author="admin">
+            <div class="news-media">
+                <img src="./assets/image/course/10.png" alt="Graduation ceremony" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Special Events</div>
+                <h2 class="news-title">Graduation Ceremony</h2>
+                <div class="news-meta">By Admin | Published: 2025-04-01</div>
+                <p class="news-description">Celebrate the achievements of our graduating students.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="events" data-title="Guest Lecture Series" data-author="teacher">
+            <div class="news-media">
+                <img src="./assets/image/course/16.png" alt="Guest lecture" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Events</div>
+                <h2 class="news-title">Guest Lecture Series</h2>
+                <div class="news-meta">By Teacher | Published: 2025-06-02</div>
+                <p class="news-description">Join experts sharing insights on education and technology.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="special events" data-title="Live Webinar on AI" data-author="teacher">
+            <div class="news-media">
+                <video controls width="100%" preload="metadata" poster="https://picsum.photos/id/1041/400/200">
+                    <source src="./assets/video/video-output-A465B337-FF30-43BF-A5B5-64D0E99832F4-1.MOV" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+            <div class="news-content">
+                <div class="news-category">Special Events</div>
+                <h2 class="news-title">Live Webinar on AI</h2>
+                <div class="news-meta">By Teacher | Published: 2025-07-02</div>
+                <p class="news-description">Join us for an interactive session about AI in education.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="student life" data-title="Holiday Activities" data-author="student">
+            <div class="news-media">
+                <img src="./assets/image/course/17.png" alt="Holiday activities" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Student Life</div>
+                <h2 class="news-title">Holiday Activities</h2>
+                <div class="news-meta">By Student | Published: 2025-06-05</div>
+                <p class="news-description">Fun and educational activities for students during the summer holidays.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="events" data-title="Annual Science Fair" data-author="teacher">
+            <div class="news-media">
+                <img src="./assets/image/course/19.png" alt="Science fair" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Events</div>
+                <h2 class="news-title">Annual Science Fair</h2>
+                <div class="news-meta">By Teacher | Published: 2025-06-20</div>
+                <p class="news-description">Join us for the annual science fair showcasing students’ projects and innovations.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="special events" data-title="Charity Fundraiser" data-author="teacher">
+            <div class="news-media">
+                <img src="./assets/image/course/14.png" alt="Charity" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Special Events</div>
+                <h2 class="news-title">Charity Fundraiser</h2>
+                <div class="news-meta">By Teacher | Published: 2025-05-05</div>
+                <p class="news-description">Help support local communities through our fundraising events.</p>
+            </div>
+        </article>
+        <!-- 8 -->
+        <article class="news-card" data-category="events" data-title="Sports Day" data-author="student">
+            <div class="news-media">
+                <img src="./assets/image/course/13.png" alt="Sports day" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Events</div>
+                <h2 class="news-title">Sports Day</h2>
+                <div class="news-meta">By Student | Published: 2025-04-30</div>
+                <p class="news-description">Annual sports day with competitions and fun activities.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="student life" data-title="Study Groups Forming" data-author="student">
+            <div class="news-media">
+                <img src="./assets/image/course/12.png" alt="Study groups" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Student Life</div>
+                <h2 class="news-title">Study Groups Forming</h2>
+                <div class="news-meta">By Student | Published: 2025-04-15</div>
+                <p class="news-description">Join or create study groups to enhance your learning experience.</p>
+            </div>
+        </article>
+
+        <article class="news-card" data-category="events" data-title="Art Exhibition" data-author="teacher">
+            <div class="news-media">
+                <img src="./assets/image/course/11.png" alt="Art exhibition" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Events</div>
+                <h2 class="news-title">Art Exhibition</h2>
+                <div class="news-meta">By Teacher | Published: 2025-04-10</div>
+                <p class="news-description">Showcase of student artwork in the school gallery.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="student life" data-title="Mental Health Awareness" data-author="student">
+            <div class="news-media">
+                <img src="./assets/image/course/15.png" alt="Mental health" />
+            </div>
+            <div class="news-content">
+                <div class="news-category">Student Life</div>
+                <h2 class="news-title">Mental Health Awareness</h2>
+                <div class="news-meta">By Student | Published: 2025-05-15</div>
+                <p class="news-description">Resources and tips for maintaining good mental health.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="exam times" data-title="Midterm Exam Dates" data-author="admin">
+            <div class="news-content">
+                <div class="news-category">Exam Times</div>
+                <h2 class="news-title">Midterm Exam Dates</h2>
+                <div class="news-meta">By Admin | Published: 2025-05-10</div>
+                <p class="news-description">Schedule and important reminders for midterm exams.</p>
+            </div>
+        </article>
+
+        <article class="news-card" data-category="rules" data-title="Attendance Policy Update" data-author="admin">
+            <div class="news-content">
+                <div class="news-category">Rules</div>
+                <h2 class="news-title">Attendance Policy Update</h2>
+                <div class="news-meta">By Admin | Published: 2025-05-20</div>
+                <p class="news-description">New attendance rules and guidelines for students and staff.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="teaching tips" data-title="Classroom Management" data-author="teacher">
+            <div class="news-content">
+                <div class="news-category">Teaching Tips</div>
+                <h2 class="news-title">Classroom Management</h2>
+                <div class="news-meta">By Teacher | Published: 2025-05-28</div>
+                <p class="news-description">Best practices to keep your classroom focused and productive.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="teaching tips" data-title="Effective Teaching Strategies" data-author="teacher">
+            <div class="news-content">
+                <div class="news-category">Teaching Tips</div>
+                <h2 class="news-title">Effective Teaching Strategies</h2>
+                <div class="news-meta">By Teacher | Published: 2025-06-28</div>
+                <p class="news-description">Explore innovative ways to engage students and improve classroom interaction.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="rules" data-title="New School Rules" data-author="admin">
+            <div class="news-content">
+                <div class="news-category">Rules</div>
+                <h2 class="news-title">New School Rules</h2>
+                <div class="news-meta">By Admin | Published: 2025-06-10</div>
+                <p class="news-description">Overview of new policies implemented this year to improve student welfare.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="teaching tips" data-title="Using Technology in Class" data-author="teacher">
+            <div class="news-content">
+                <div class="news-category">Teaching Tips</div>
+                <h2 class="news-title">Using Technology in Class</h2>
+                <div class="news-meta">By Teacher | Published: 2025-04-25</div>
+                <p class="news-description">Incorporate technology effectively for better learning outcomes.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="rules" data-title="Dress Code Reminder" data-author="admin">
+            <div class="news-content">
+                <div class="news-category">Rules</div>
+                <h2 class="news-title">Dress Code Reminder</h2>
+                <div class="news-meta">By Admin | Published: 2025-04-20</div>
+                <p class="news-description">Please follow the updated dress code policies for the school.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="teaching tips" data-title="Engaging Online Classes" data-author="teacher">
+            <div class="news-content">
+                <div class="news-category">Teaching Tips</div>
+                <h2 class="news-title">Engaging Online Classes</h2>
+                <div class="news-meta">By Teacher | Published: 2025-04-05</div>
+                <p class="news-description">Techniques to keep students motivated during virtual lessons.</p>
+            </div>
+        </article>
+        <article class="news-card" data-category="exam times" data-title="Final Exam Schedule" data-author="admin">
+            <div class="news-content">
+                <div class="news-category">Exam Times</div>
+                <h2 class="news-title">Final Exam Schedule</h2>
+                <div class="news-meta">By Admin | Published: 2025-06-15</div>
+                <p class="news-description">Important dates and times for final exams this semester. Please review carefully.</p>
+            </div>
+        </article>
+        </section>
+    </section>
+        <section class="blog page-one">
+            <div class="part-one-blog">
+                <article class="course-item">
+                    <h2 class="course-title">Comprehensive English Language Course - Beginner Level</h2>
+                    <p class="course-description">
+                        This course is designed for those who want to learn English from the basics in a complete and systematic way. It covers grammar, conversation, listening, and reading skills.
+                    </p>
+                    <div class="course-meta">
+                        <span class="author">Author: Language Teacher - Mrs. Fatemeh Rezaei</span>
+                        <time datetime="2024-07-03" class="date">July 3, 2025</time>
+                    </div>
+                </article>
+
+                <article class="course-item">
+                    <h2 class="course-title">Everyday Spanish Conversation Skills</h2>
+                    <p class="course-description">
+                        This article includes key tips and practical exercises to improve Spanish conversation skills in daily situations such as shopping, traveling, and talking with friends.
+                    </p>
+                    <div class="course-meta">
+                        <span class="author">Author: Student - Mr. Ali Mohammadi</span>
+                        <time datetime="2024-06-22" class="date">June 22, 2025</time>
+                    </div>
+                </article>
+
+                <article class="course-item">
+                    <h2 class="course-title">Golden Tips for Self-learning German Language</h2>
+                    <p class="course-description">
+                        In this article, useful methods and resources are introduced for learning German without attending in-person classes, helping learners progress faster.
+                    </p>
+                    <div class="course-meta">
+                        <span class="author">Author: Language Teacher - Mr. Saeed Hosseini</span>
+                        <time datetime="2024-05-30" class="date">May 30, 2025</time>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <footer class="pages-seven">
+    <div class="footer">
+        <div class="footer-txt">
+            <h2>Amazone Education Center</h2> 
+        </div>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Site Map</h3>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="Courses.html">Courses</a>
+                    <a href="#">Porgrams & Services</a>
+                    <a href="Verfiy.html">Verfiy Certificate</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Partners</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Term of Service</a>
+                </div>
+
+                <div class="footer-section1">
+                    <h3>Quick Contact</h3>
+                    <a href="tel:+93700000000" class="quick-call-btn">📞 Call Now</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://t.me" target="_blank" title="Telegram"><i class='bx bxl-telegram' ></i></a>
+                        <a href="https://wa.me/93700000000" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp' ></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Amazon. All rights reserved | Developed By Mahmoud
+            </div>
+    </div>
+    </footer>
+
+    <!-- Linking Blog.js -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/js/blog.js" async defer></script>
+    <!-- Links of JavaScript -->
+    <script src="./assets/js/popup.js"></script>
+    <!-- Linking swiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+</body>
+</html>
