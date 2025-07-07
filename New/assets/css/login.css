@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    color: #f7df9e; /* طلایی روشن */
+    color: #f7df9e;
     background: linear-gradient(135deg, #f5d061, #3a7d44);
     position: relative;
     overflow: hidden;

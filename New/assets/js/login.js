@@ -21,12 +21,10 @@ backToLogin.addEventListener('click', (e) => {
     formTitle.textContent = 'Welcome';
 });
 
-// فعال/غیرفعال کردن دکمه ارسال بسته به ایمیل
 emailForgotInput.addEventListener('input', () => {
     forgotBtn.disabled = !emailForgotInput.checkValidity();
 });
 
-// جلوگیری از ارسال فرم واقعی (برای نمونه)
 document.getElementById('authForm').addEventListener('submit', e => {
     e.preventDefault();
     if (loginFields.style.display !== 'none') {

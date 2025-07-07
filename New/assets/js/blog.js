@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     categorySelect.addEventListener('change', filterNews);
     authorSelect.addEventListener('change', filterNews);
-  });
+});
 
 function filterNews() {
   const searchTerm = document.getElementById('searchInput').value.toLowerCase();
