@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرکز آموزشی آمازون</title>
+    <link rel="icon" href="./assets/image/logo-yellow.svg">
+    <!-- فاوآیکون -->
+    <link rel="icon" href="./assets/image/favicon.png" sizes="20x20" type="image/png">
+    <!-- آیکون‌های گوگل -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- استایل -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- استایل SwiperJS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- آیکون‌های BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- استایل Choices.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <!-- لودر -->
+    <link rel="stylesheet" href="./assets/css/loder.css">
+    <!-- Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+
+<!-- طراحی شده توسط محمود رضایی -->
+
+<body class="no-scroll">
+    <div id="loader-container">
+        <div class="honeycomb">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <a href="#" class="in-fa" id="openPopup">
+        <lord-icon src="https://cdn.lordicon.com/jgeruqwm.json" trigger="hover" stroke="bold" colors="primary:#ffcc00,secondary:#ecfb18" style="width:50px;height:50px"></lord-icon>
+    </a>
+
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <h2 class="lang-h2">زبان خود را انتخاب کنید</h2>
+            <div class="pop">
+                <a href="Courses.html" dir="ltr">English</a>
+                <a href="coursesFa.html" dir="rtl">فارسی</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrol-fa"><a id="backToTopBtn" href="#"><i class='bx bx-right-arrow-alt'></i></a></div>
+
+    <!-- هدر -->
+    <div class="header-home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo-yellow.svg" alt="لوگو">
+                </a>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <div class="nav">
+                <a href="indexFa.html">خانه</a>
+                <a href="blogFa.html">بلاگ</a>
+                <a href="coursesFa.html">دوره‌ها</a>
+                <a href="serviceFa.html">برنامه‌ها و خدمات</a>
+                <a href="VerfiyFa.html">تأیید گواهی‌نامه</a>
+                <a href="aboutUsFa.html">درباره ما</a>
+                <a href="partenersFa.html">همکاران ما</a>
+                <a href="contactUsFa.html">تماس با ما</a>
+                <a href="Login.html" id="log-in">ورود</a>
+            </div>
+            <div class="btn-container"><a href="Login.html" class="btn-effect-5">ورود</a></div>
+        </div>
+    </div>
+
+    <section class="courses">
+        <h2 class="course-h2">دوره‌های موجود</h2>
+        <div class="border-bottom available"></div>
+
+        <div class="filters">
+            <select><option>گروه سنی</option><option>کودکان</option><option>نوجوانان</option><option>بزرگسالان</option></select>
+            <select><option>سطح زبان</option><option>مبتدی</option><option>متوسط</option><option>پیشرفته</option></select>
+            <select><option>گواهی‌نامه</option><option>دارد</option><option>ندارد</option></select>
+            <select><option>مدت زمان</option><option>کوتاه</option><option>طولانی</option></select>
+        </div>
+
+        <div class="view-toggle">
+            <button onclick="switchView('grid')">نمای شبکه‌ای</button>
+            <button onclick="switchView('list')">نمای لیستی</button>
+        </div>
+
+        <div id="courses" class="courses-grid">
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>دوره مکالمه زبان انگلیسی</h3>
+                <p>تمرین مکالمه از سطح متوسط تا پیشرفته.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۳ ماه</li>
+                    <li>📌 پیش‌نیاز: سطح متوسط</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>دوره تقویت گرامر</h3>
+                <p>تمام سطوح گرامر در یک ماه آموزش داده می‌شود.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۱ ماه</li>
+                    <li>📌 پیش‌نیاز: ندارد</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>دوره آمادگی آیلتس</h3>
+                <p>آمادگی کامل برای آیلتس آکادمیک یا جنرال.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۴ ماه</li>
+                    <li>📌 پیش‌نیاز: سطح بالای متوسط</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>انگلیسی مقدماتی کودکان</h3>
+                <p>آموزش انگلیسی تصویری و سرگرم‌کننده برای کودکان ۶ تا ۹ ساله.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۲ ماه</li>
+                    <li>📌 پیش‌نیاز: ندارد</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>انگلیسی تجاری</h3>
+                <p>یادگیری مهارت‌های ارتباطی و نوشتاری برای محیط کار.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۲.۵ ماه</li>
+                    <li>📌 پیش‌نیاز: سطح متوسط</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>باشگاه مکالمه</h3>
+                <p>جلسات هفتگی مکالمه با اساتید بومی زبان.</p>
+                <ul>
+                    <li>⏱ مدت زمان: بدون محدودیت</li>
+                    <li>📌 پیش‌نیاز: سطح متوسط به بالا</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>آمادگی آزمون تافل</h3>
+                <p>آموزش جامع آزمون تافل iBT همراه با آزمون‌های شبیه‌سازی.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۳ ماه</li>
+                    <li>📌 پیش‌نیاز: سطح بالای متوسط</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>مهارت‌های زبان برای نوجوانان</h3>
+                <p>تمرکز بر گرامر، واژگان و مکالمه برای نوجوانان.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۳ ماه</li>
+                    <li>📌 پیش‌نیاز: مقدماتی / ابتدایی</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+            <div class="course-card">
+                <div class="cover-img-courses">
+                    <img src="./assets/image/course/01.png" alt="Course">
+                </div>
+                <h3>دوره تقویت گرامر</h3>
+                <p>تمام سطوح گرامر در یک ماه آموزش داده می‌شود.</p>
+                <ul>
+                    <li>⏱ مدت زمان: ۱ ماه</li>
+                    <li>📌 پیش‌نیاز: ندارد</li>
+                </ul>
+                <a href="#" class="btn">جزئیات / ثبت‌نام</a>
+            </div>
+        </div>
+
+        <section class="course-registration">
+            <form id="courseForm">
+                <h2 class="courseForm-h2">فرم ثبت‌نام دوره</h2>
+                <label>نوع کلاس:</label>
+                <select name="classType" required><option>حضوری</option><option>آنلاین</option></select>
+                <label>نام کامل:</label>
+                <input type="text" name="fullName" required>
+                <label>شماره تماس:</label>
+                <input type="tel" name="phone" required>
+                <label>مرکز ترجیحی:</label>
+                <select name="branch" required><option>مرکز اصلی</option><option>شعبه غرب</option><option>شعبه شرق</option></select>
+                <label>دوره انتخابی:</label>
+                <select name="selectedCourse" required><option>مکالمه انگلیسی</option><option>گرامر پیشرفته</option><option>آمادگی آیلتس</option></select>
+                <button id="btn-form" type="submit">ارسال</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="pro-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <h2>مرکز آموزشی آمازون</h2>
+                <p>توانمندسازی شما برای صحبت با دنیا — جایی که انگلیسی تنها آغاز راه است.</p>
+            </div>
+
+            <div class="footer-sections">
+                <div class="link-group">
+                    <h3>کاوش</h3>
+                    <a href="indexFa.html">خانه</a>
+                    <a href="blogFa.html">بلاگ</a>
+                    <a href="coursesFa.html">دوره‌ها</a>
+                    <a href="serviceFa.html">برنامه‌ها و خدمات</a>
+                    <a href="VerfiyFa.html">تأیید گواهی‌نامه</a>
+                </div>
+
+                <div class="link-group">
+                    <h3>شرکت</h3>
+                    <a href="aboutUsFa.html">درباره ما</a>
+                    <a href="partenersFa.html">همکاران ما</a>
+                    <a href="contactUsFa.html">تماس</a>
+                </div>
+
+                <div class="link-group">
+                    <h3>تماس</h3>
+                    <p>📍 کابل، افغانستان</p>
+                    <p>📞 <a href="tel:+93700000000" style="color: gray">+۹۳ ۷۰۰ ۰۰۰ ۰۰۰</a></p>
+                    <p>✉️ <a href="mailto:info@amazone.edu" style="color: gray">info@amazone.edu</a></p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://wa.me/93700000000" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+
+                <div class="link-group">
+                    <h3>خبرنامه</h3>
+                    <p>برای دریافت به‌روزرسانی‌ها و منابع رایگان عضو شوید:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ایمیل شما" required />
+                        <button type="submit">عضویت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© ۲۰۲۵ مرکز آموزشی آمازون | طراحی و توسعه توسط محمود</p>
+        </div>
+    </footer>
+
+    <!-- اسکریپت‌ها -->
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/backTop.js"></script>
+    <script src="./assets/js/loder.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/courses.js"></script>
+</body>
+</html>

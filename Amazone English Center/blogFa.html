@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرکز آموزشی آمازون</title>
+    <!-- Linking Favicon -->
+    <link rel="icon" href="./assets/image/favicon.png" sizes="20x20" type="image/png">
+    <!-- Linking Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- Linking Main Style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Linking CDN -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Linking BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <!-- Linking Loder.css -->
+    <link rel="stylesheet" href="./assets/css/loder.css">
+    <!-- Linking Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body class="no-scroll">
+    <!-- Loder Start -->
+    <div id="loader-container">
+        <div class="honeycomb">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Loder End -->
+
+    <!-- Lordicon for Changing Language -->
+    <a href="#" class="in-fa" id="openPopup">
+        <lord-icon
+            src="https://cdn.lordicon.com/jgeruqwm.json"
+            trigger="hover"
+            stroke="bold"
+            colors="primary:#ffcc00,secondary:#ecfb18"
+            style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <h2 class="lang-h2">Select Your Language</h2>
+            <div class="pop">
+                <a href="blog.html" dir="ltr">English</a>
+                <a href="blogFa.html" dir="rtl">فارسی</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Lordicon Elements -->
+
+    <!-- Bact to Top Btn -->
+    <div class="scrol-fa"><a href="#" id="backToTopBtn"><i class='bx bx-right-arrow-alt' ></i></a></div>
+
+    <!-- Start Header -->
+    <div class="header-home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo-yellow.svg" alt="لوگو">
+                </a>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <div class="nav">
+                <a href="indexFa.html">خانه</a>
+                <a href="blogFa.html">بلاگ</a>
+                <a href="CoursesFa.html">دوره‌ها</a>
+                <a href="serviceFa.html">برنامه‌ها و خدمات</a>
+                <a href="VerfiyFa.html">تأیید مدرک</a>
+                <a href="aboutUsFa.html">درباره ما</a>
+                <a href="partenersFa.html">شرکای ما</a>
+                <a href="contactUsFa.html">تماس با ما</a>
+                <a href="Login.html" id="log-in">ورود</a>
+            </div>
+            <div class="btn-container"><a href="Login.html" class="btn-effect-5">ورود</a></div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start News blog-last Section -->
+    <section class="blog-last">
+        <div class="header-blog">
+            <h1>اخبار و اطلاعیه‌ها</h1>
+            <p>با آخرین اخبار، رویدادها و تاریخ‌های مهم به‌روز باشید</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="جستجوی اخبار..." oninput="filterNews()" />
+
+            <select id="categoryFilter" multiple aria-label="فیلتر بر اساس دسته‌بندی">
+                <option value="student life">زندگی دانشجویی</option>
+                <option value="teaching tips">نکات آموزشی</option>
+                <option value="events">رویدادها</option>
+                <option value="exam times">زمان امتحانات</option>
+                <option value="rules">قوانین</option>
+                <option value="special events">رویدادهای ویژه</option>
+            </select>
+
+            <select id="authorFilter" aria-label="فیلتر بر اساس نویسنده">
+                <option value="">همه نویسندگان</option>
+                <option value="student">دانشجو</option>
+                <option value="teacher">معلم</option>
+                <option value="admin">مدیر</option>
+            </select>
+        </div>
+
+        <!-- Cards -->
+        <section class="news-grid" id="newsGrid">
+            <article class="news-card" data-category="student life" data-title="Back to School Tips" data-author="student">
+                <div class="news-media">
+                    <img src="./assets/image/course/20.png" alt="بازگشت به مدرسه" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">زندگی دانشجویی</div>
+                    <h2 class="news-title">نکات بازگشت به مدرسه</h2>
+                    <div class="news-meta">توسط دانشجو | منتشر شده در: ۱۰ تیر ۱۴۰۴</div>
+                    <p class="news-description">نکاتی برای آماده شدن دانش‌آموزان با اعتماد به نفس و موفقیت برای سال تحصیلی جدید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="special events" data-title="Graduation Ceremony" data-author="admin">
+                <div class="news-media">
+                    <img src="./assets/image/course/10.png" alt="مراسم فارغ‌التحصیلی" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادهای ویژه</div>
+                    <h2 class="news-title">مراسم فارغ‌التحصیلی</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۱۲ فروردین ۱۴۰۴</div>
+                    <p class="news-description">جشن گرفتن موفقیت‌های دانش‌آموزان فارغ‌التحصیل.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="events" data-title="Guest Lecture Series" data-author="teacher">
+                <div class="news-media">
+                    <img src="./assets/image/course/16.png" alt="سخنرانی مهمان" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادها</div>
+                    <h2 class="news-title">سری سخنرانی‌های مهمان</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۱۲ خرداد ۱۴۰۴</div>
+                    <p class="news-description">با کارشناسان همراه شوید تا دیدگاه‌هایی درباره آموزش و فناوری به اشتراک بگذارند.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="special events" data-title="Live Webinar on AI" data-author="teacher">
+                <div class="news-media">
+                    <video controls width="100%" preload="metadata" poster="https://picsum.photos/id/1041/400/200">
+                        <source src="./assets/video/video-output-A465B337-FF30-43BF-A5B5-64D0E99832F4-1.MOV" type="video/mp4" />
+                        مرورگر شما از ویدئو پشتیبانی نمی‌کند.
+                    </video>
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادهای ویژه</div>
+                    <h2 class="news-title">وبینار زنده درباره هوش مصنوعی</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۱۱ تیر ۱۴۰۴</div>
+                    <p class="news-description">در جلسه‌ای تعاملی درباره هوش مصنوعی در آموزش همراه ما باشید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="student life" data-title="Holiday Activities" data-author="student">
+                <div class="news-media">
+                    <img src="./assets/image/course/17.png" alt="فعالیت‌های تعطیلات" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">زندگی دانشجویی</div>
+                    <h2 class="news-title">فعالیت‌های تعطیلات</h2>
+                    <div class="news-meta">توسط دانشجو | منتشر شده در: ۱۵ خرداد ۱۴۰۴</div>
+                    <p class="news-description">فعالیت‌های سرگرم‌کننده و آموزشی برای دانش‌آموزان در طول تعطیلات تابستان.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="events" data-title="Annual Science Fair" data-author="teacher">
+                <div class="news-media">
+                    <img src="./assets/image/course/19.png" alt="نمایشگاه علوم" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادها</div>
+                    <h2 class="news-title">نمایشگاه سالانه علوم</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۳۰ خرداد ۱۴۰۴</div>
+                    <p class="news-description">با ما در نمایشگاه سالانه علوم همراه شوید تا پروژه‌ها و نوآوری‌های دانش‌آموزان را ببینید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="special events" data-title="Charity Fundraiser" data-author="teacher">
+                <div class="news-media">
+                    <img src="./assets/image/course/14.png" alt="جمع‌آوری کمک‌های خیریه" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادهای ویژه</div>
+                    <h2 class="news-title">جمع‌آوری کمک‌های خیریه</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۱۵ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">به حمایت از جامعه محلی از طریق رویدادهای جمع‌آوری کمک مالی ما بپیوندید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="events" data-title="Sports Day" data-author="student">
+                <div class="news-media">
+                    <img src="./assets/image/course/13.png" alt="روز ورزش" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادها</div>
+                    <h2 class="news-title">روز ورزش</h2>
+                    <div class="news-meta">توسط دانشجو | منتشر شده در: ۱۰ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">روز سالانه ورزش با مسابقات و فعالیت‌های سرگرم‌کننده.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="student life" data-title="Study Groups Forming" data-author="student">
+                <div class="news-media">
+                    <img src="./assets/image/course/12.png" alt="گروه‌های مطالعه" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">زندگی دانشجویی</div>
+                    <h2 class="news-title">تشکیل گروه‌های مطالعه</h2>
+                    <div class="news-meta">توسط دانشجو | منتشر شده در: ۲۶ فروردین ۱۴۰۴</div>
+                    <p class="news-description">برای بهبود تجربه یادگیری خود به گروه‌های مطالعه بپیوندید یا خودتان تشکیل دهید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="events" data-title="Art Exhibition" data-author="teacher">
+                <div class="news-media">
+                    <img src="./assets/image/course/11.png" alt="نمایشگاه هنر" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">رویدادها</div>
+                    <h2 class="news-title">نمایشگاه هنر</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۲۰ فروردین ۱۴۰۴</div>
+                    <p class="news-description">نمایش آثار هنری دانش‌آموزان در گالری مدرسه.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="student life" data-title="Mental Health Awareness" data-author="student">
+                <div class="news-media">
+                    <img src="./assets/image/course/15.png" alt="سلامت روان" />
+                </div>
+                <div class="news-content">
+                    <div class="news-category">زندگی دانشجویی</div>
+                    <h2 class="news-title">آگاهی‌بخشی درباره سلامت روان</h2>
+                    <div class="news-meta">توسط دانشجو | منتشر شده در: ۲۵ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">منابع و نکاتی برای حفظ سلامت روانی خوب.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="exam times" data-title="Midterm Exam Dates" data-author="admin">
+                <div class="news-content">
+                    <div class="news-category">زمان‌بندی امتحانات</div>
+                    <h2 class="news-title">تاریخ‌های امتحانات میان‌ترم</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۲۰ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">جدول زمان‌بندی و یادآوری‌های مهم برای امتحانات میان‌ترم.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="rules" data-title="Attendance Policy Update" data-author="admin">
+                <div class="news-content">
+                    <div class="news-category">قوانین</div>
+                    <h2 class="news-title">به‌روزرسانی قوانین حضور</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۳۰ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">قوانین جدید حضور و راهنمایی‌های مربوط به دانش‌آموزان و کارکنان.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="teaching tips" data-title="Classroom Management" data-author="teacher">
+                <div class="news-content">
+                    <div class="news-category">نکات آموزشی</div>
+                    <h2 class="news-title">مدیریت کلاس درس</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۷ خرداد ۱۴۰۴</div>
+                    <p class="news-description">بهترین روش‌ها برای حفظ تمرکز و بهره‌وری کلاس شما.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="teaching tips" data-title="Effective Teaching Strategies" data-author="teacher">
+                <div class="news-content">
+                    <div class="news-category">نکات آموزشی</div>
+                    <h2 class="news-title">استراتژی‌های موثر تدریس</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۷ تیر ۱۴۰۴</div>
+                    <p class="news-description">روش‌های نوآورانه برای جذب دانش‌آموزان و بهبود تعامل کلاسی.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="rules" data-title="New School Rules" data-author="admin">
+                <div class="news-content">
+                    <div class="news-category">قوانین</div>
+                    <h2 class="news-title">قوانین جدید مدرسه</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۲۰ خرداد ۱۴۰۴</div>
+                    <p class="news-description">مروری بر سیاست‌های جدیدی که امسال برای رفاه دانش‌آموزان اجرا شده است.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="teaching tips" data-title="Using Technology in Class" data-author="teacher">
+                <div class="news-content">
+                    <div class="news-category">نکات آموزشی</div>
+                    <h2 class="news-title">استفاده از فناوری در کلاس</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۵ اردیبهشت ۱۴۰۴</div>
+                    <p class="news-description">ادغام فناوری به صورت موثر برای نتایج بهتر یادگیری.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="rules" data-title="Dress Code Reminder" data-author="admin">
+                <div class="news-content">
+                    <div class="news-category">قوانین</div>
+                    <h2 class="news-title">یادآوری قوانین پوشش</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۳۱ فروردین ۱۴۰۴</div>
+                    <p class="news-description">لطفاً از قوانین به‌روزشده پوشش مدرسه پیروی کنید.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="teaching tips" data-title="Engaging Online Classes" data-author="teacher">
+                <div class="news-content">
+                    <div class="news-category">نکات آموزشی</div>
+                    <h2 class="news-title">کلاس‌های آنلاین جذاب</h2>
+                    <div class="news-meta">توسط استاد | منتشر شده در: ۱۶ فروردین ۱۴۰۴</div>
+                    <p class="news-description">تکنیک‌هایی برای حفظ انگیزه دانش‌آموزان در دروس مجازی.</p>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="exam times" data-title="Final Exam Schedule" data-author="admin">
+                <div class="news-content">
+                    <div class="news-category">زمان‌بندی امتحانات</div>
+                    <h2 class="news-title">برنامه امتحانات پایان‌ترم</h2>
+                    <div class="news-meta">توسط مدیر | منتشر شده در: ۲۵ خرداد ۱۴۰۴</div>
+                    <p class="news-description">تاریخ‌ها و ساعت‌های مهم امتحانات پایان‌ترم این ترم. لطفاً با دقت بررسی کنید.</p>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <!-- Courses -->
+    <section class="blog page-one">
+        <div class="part-one-blog">
+            <h2 class="blog-h1">دوره ها</h2>
+
+            <article class="course-item">
+                <h2 class="course-title">دوره جامع زبان انگلیسی - سطح مبتدی</h2>
+                <p class="course-description">
+                    این دوره برای کسانی طراحی شده است که می‌خواهند زبان انگلیسی را از پایه به صورت کامل و منظم یاد بگیرند. این دوره شامل گرامر، مکالمه، مهارت‌های شنیداری و خواندن است.
+                </p>
+                <div class="course-meta">
+                    <span class="author">نویسنده: مدرس زبان - خانم فاطمه رضایی</span>
+                    <time datetime="2024-07-03" class="date">۳ تیر ۱۴۰۴</time>
+                </div>
+            </article>
+
+            <article class="course-item">
+                <h2 class="course-title">مهارت‌های مکالمه روزمره اسپانیایی</h2>
+                <p class="course-description">
+                    این مقاله شامل نکات کلیدی و تمرین‌های عملی برای بهبود مهارت مکالمه اسپانیایی در موقعیت‌های روزمره مانند خرید، سفر و صحبت با دوستان است.
+                </p>
+                <div class="course-meta">
+                    <span class="author">نویسنده: دانشجو - آقای علی محمدی</span>
+                    <time datetime="2024-06-22" class="date">۱ تیر ۱۴۰۴</time>
+                </div>
+            </article>
+
+            <article class="course-item">
+                <h2 class="course-title">نکات طلایی برای خودآموزی زبان آلمانی</h2>
+                <p class="course-description">
+                    در این مقاله روش‌ها و منابع مفیدی برای یادگیری زبان آلمانی بدون حضور در کلاس‌های حضوری معرفی شده که به زبان‌آموزان کمک می‌کند سریع‌تر پیشرفت کنند.
+                </p>
+                <div class="course-meta">
+                    <span class="author">نویسنده: مدرس زبان - آقای سعید حسینی</span>
+                    <time datetime="2024-05-30" class="date">۹ خرداد ۱۴۰۴</time>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+<!-- Footer Start -->
+<footer class="pro-footer">
+    <div class="container">
+        <div class="footer-brand">
+            <h2>مرکز آموزشی آمازون</h2>
+            <p>توانمندسازی شما برای صحبت با جهان — جایی که انگلیسی تنها آغاز راه است.</p>
+        </div>
+
+        <div class="footer-sections">
+            <div class="link-group">
+                <h3>بیشتر بدانید</h3>
+                <a href="indexFa.html">خانه</a>
+                <a href="blogFa.html">بلاگ</a>
+                <a href="coursesFa.html">دوره‌ها</a>
+                <a href="serviceFa.html">برنامه و خدمات</a>
+                <a href="VerfiyFa.html">تأیید گواهی‌نامه</a>
+            </div>
+
+            <div class="link-group">
+                <h3>شرکت</h3>
+                <a href="aboutUsFa.html">درباره ما</a>
+                <a href="partenersFa.html">همکاران ما</a>
+                <a href="contactUsFa.html">تماس با ما</a>
+            </div>
+
+            <div class="link-group">
+                <h3>تماس</h3>
+                <p>📍 کابل، افغانستان</p>
+                <p>📞 <a href="tel:+93700000000" style="color: gray">+۹۳ ۷۰۰ ۰۰۰ ۰۰۰</a></p>
+                <p>✉️ <a href="mailto:info@amazone.edu" style="color: gray">info@amazone.edu</a></p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://wa.me/93700000000" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+
+            <div class="link-group">
+                <h3>خبرنامه</h3>
+                <p>برای دریافت به‌روزرسانی‌ها و منابع رایگان عضو شوید:</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="ایمیل شما" required />
+                    <button type="submit">عضویت</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© ۲۰۲۵ مرکز آموزشی آمازون | طراحی و توسعه توسط محمود</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Links of JavaScript
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Linking backToTopBtn -->
+    <script src="./assets/js/backTop.js"></script>
+    <!-- Linking Lang.js -->
+    <script src="./assets/js/lang.js"></script>
+    <!-- Linking Loder.js -->
+    <script src="./assets/js/loder.js"></script>
+    <!-- Linking Header.js -->
+    <script src="./assets/js/header.js"></script>
+    <!-- Linking CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <!-- Linking Persian Element -->
+    <script src="./assets/js/blogFa.js" defer></script>
+</body>
+</html>

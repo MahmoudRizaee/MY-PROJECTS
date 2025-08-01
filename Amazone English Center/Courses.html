@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazone Educational Center</title>
+    <link rel="icon" href="./assets/image/logo-yellow.svg">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/image/favicon.png" sizes="20x20" type="image/png">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link swiperJS.css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Linking Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Choices.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <!-- Linking Loder.css -->
+    <link rel="stylesheet" href="./assets/css/loder.css">
+    <!-- Linking Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+
+<!-- Developed by Mahmoud Rizaee -->
+
+<body class="no-scroll">
+    <div id="loader-container">
+        <div class="honeycomb">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <a href="#" class="world_icon" id="openPopup">
+        <lord-icon
+            src="https://cdn.lordicon.com/jgeruqwm.json"
+            trigger="hover"
+            stroke="bold"
+            colors="primary:#ffcc00,secondary:#ecfb18"
+            style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <h2 class="lang-h2">Select Your Language</h2>
+            <div class="pop">
+                <a href="Courses.html" dir="ltr">English</a>
+                <a href="coursesFa.html" dir="rtl">فارسی</a>
+            </div>
+        </div>
+    </div>
+    <div class="scrol"><a id="backToTopBtn" href="#"><i class='bx bx-right-arrow-alt' ></i></a></div>
+    <!-- Header  -->
+    <div class="header-home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo-yellow.svg" alt="">
+                </a>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="Courses.html">Courses</a>
+                <a href="service.html">Porgrams & Services</a>
+                <a href="Verfiy.html">Verfiy Certificate</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="parteners.html">Our Partners</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            <div class="btn-container"><a href="Login.html" class="btn-effect-5">Log In</a></div>
+        </div>
+    </div>
+    <section class="courses">
+        <h2 class="course-h2">Available Courses</h2>
+        <div class="border-bottom available"></div>
+
+        <div class="filters">
+            <select><option>Age Group</option><option>Kids</option><option>Teens</option><option>Adults</option></select>
+            <select><option>Language Level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+            <select><option>Certificate</option><option>Included</option><option>Not Included</option></select>
+            <select><option>Duration</option><option>Short</option><option>Long</option></select>
+        </div>
+
+        <div class="view-toggle">
+            <button onclick="switchView('grid')">Grid View </button>
+            <button onclick="switchView('list')">List View </button>
+        </div>
+
+        <div id="courses" class="courses-grid">
+                <div class="course-card">
+                        <div class="cover-img-courses">
+                            <img src="./assets/image/course/01.png" alt="Course">
+                        </div>
+                        <h3>English Conversation Course</h3>
+                        <p>Intermediate to advanced speaking practice.</p>
+                    <ul>
+                        <li>⏱ Duration: 3 Months</li>
+                        <li>📌 Prerequisite: Intermediate Level</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Grammar Booster Course</h3>
+                    <p>All grammar levels covered in just 1 month.</p>
+                    <ul>
+                        <li>⏱ Duration: 1 Month</li>
+                        <li>📌 Prerequisite: None</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>IELTS Preparation Course</h3>
+                    <p>Full preparation for IELTS Academic or General.</p>
+                    <ul>
+                        <li>⏱ Duration: 4 Months</li>
+                        <li>📌 Prerequisite: Upper-Intermediate</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Kids Starter English</h3>
+                    <p>Fun, visual English for young learners aged 6–9.</p>
+                    <ul>
+                        <li>⏱ Duration: 2 Months</li>
+                        <li>📌 Prerequisite: None</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Business English</h3>
+                    <p>Learn communication and writing skills for work.</p>
+                    <ul>
+                        <li>⏱ Duration: 2.5 Months</li>
+                        <li>📌 Prerequisite: Intermediate</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Speaking Club</h3>
+                    <p>Weekly speaking sessions with native teachers.</p>
+                    <ul>
+                        <li>⏱ Duration: Ongoing</li>
+                        <li>📌 Prerequisite: Intermediate+</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>TOEFL Preparation</h3>
+                    <p>Comprehensive TOEFL iBT training and mock tests.</p>
+                    <ul>
+                        <li>⏱ Duration: 3 Months</li>
+                        <li>📌 Prerequisite: Upper-Intermediate</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Teen English Skills</h3>
+                    <p>Focus on grammar, vocabulary, and conversation for teens.</p>
+                    <ul>
+                        <li>⏱ Duration: 3 Months</li>
+                        <li>📌 Prerequisite: Beginner/Elementary</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+                <div class="course-card">
+                    <div class="cover-img-courses">
+                        <img src="./assets/image/course/01.png" alt="Course">
+                    </div>
+                    <h3>Grammar Booster Course</h3>
+                    <p>All grammar levels covered in just 1 month.</p>
+                    <ul>
+                        <li>⏱ Duration: 1 Month</li>
+                        <li>📌 Prerequisite: None</li>
+                    </ul>
+                    <a href="#" class="btn">Details / Register</a>
+                </div>
+        </div>
+        <section class="course-registration">
+            <form id="courseForm">
+                <h2 class="courseForm-h2">Course Registration</h2>
+
+                <label>Class Type:</label>
+                <select name="classType" required>
+                <option >In-Person</option>
+                <option>Online</option>
+                </select>
+
+                <label>Full Name:</label>
+                <input type="text" name="fullName" required>
+
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" required>
+
+                <label>Preferred Branch:</label>
+                <select name="branch" required>
+                <option>Main Branch</option>
+                <option>West Branch</option>
+                <option>East Branch</option>
+                </select>
+
+                <label>Selected Course:</label>
+                <select name="selectedCourse" required>
+                <option>English Conversation</option>
+                <option>Grammar Booster</option>
+                <option>IELTS Preparation</option>
+                </select>
+
+                <button id="btn-form" type="submit">Submit</button>
+            </form>
+            <div class="one-side-img">
+                <img src="./assets/image/favicon.png" alt="Image">
+            </div>
+        </section>
+    </section>
+    <!-- Footer Start -->
+    <footer class="pro-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <h2>Amazone Educational Center</h2>
+                <p>Empowering you to speak the world — Where English is just the beginning.</p>
+            </div>
+    
+            <div class="footer-sections">
+                <div class="link-group">
+                    <h3>Explore</h3>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="Courses.html">Courses</a>
+                    <a href="service.html">Programs & Services</a>
+                    <a href="Verfiy.html">Verify Certificate</a>
+                </div>
+    
+                <div class="link-group">
+                    <h3>Company</h3>
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="parteners.html">Our Partners</a>
+                    <a href="contactUs.html">Contact</a>
+                </div>
+    
+                <div class="link-group">
+                    <h3>Contact</h3>
+                    <p>📍 Kabul, Afghanistan</p>
+                    <p>📞 <a href="tel:+93700000000" style="color: gray">+93 700 000 000</a></p>
+                    <p>✉️ <a href="mailto:info@amazone.edu" style="color: gray">info@amazone.edu</a></p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://wa.me/93700000000" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+    
+                <div class="link-group">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates and free resources:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+            <div class="footer-bottom">
+                <p>© 2025 Amazone Educational Center | Designed & Developed by Mahmoud</p>
+            </div>
+    </footer>
+    <!-- Linking Lang.js -->
+    <script src="./assets/js/lang.js"></script>
+    <!-- Linking backToTopBtn -->
+    <script src="./assets/js/backTop.js"></script>
+    <!-- Linking Loder.js -->
+    <script src="./assets/js/loder.js"></script>
+    <!-- header linking -->
+    <script src="./assets/js/header.js"></script>
+    <!-- Linking courses.js -->
+    <script src="./assets/js/courses.js"></script>
+</body>
+</html>

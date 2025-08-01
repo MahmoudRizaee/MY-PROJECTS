@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرکز آموزشی آمازون</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/image/favicon.png" sizes="20x20" type="image/png">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link swiperJS.css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Linking Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Choices.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <!-- Linking Loder.css -->
+    <link rel="stylesheet" href="./assets/css/loder.css">
+    <!-- Linking Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+
+<!-- توسعه یافته توسط محمود رضایی -->
+
+<body class="no-scroll">
+    <!-- لودر -->
+    <div id="loader-container">
+        <div class="honeycomb">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <a href="#" class="in-fa" id="openPopup">
+        <lord-icon
+            src="https://cdn.lordicon.com/jgeruqwm.json"
+            trigger="hover"
+            stroke="bold"
+            colors="primary:#ffcc00,secondary:#ecfb18"
+            style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <h2 class="lang-h2">زبان خود را انتخاب کنید</h2>
+            <div class="pop">
+                <a href="Verfiy.html" dir="ltr">English</a>
+                <a href="VerfiyFa.html" dir="rtl">فارسی</a>
+            </div>
+        </div>
+    </div>
+    <div class="scrol-fa"><a href="#" id="backToTopBtn"><i class='bx bx-right-arrow-alt' ></i></a></div>
+
+    <!-- هدر -->
+    <div class="header-home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo-yellow.svg" alt="">
+                </a>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <div class="nav">
+                <a href="indexFa.html">خانه</a>
+                <a href="blogFa.html">بلاگ</a>
+                <a href="Coursesfa.html">دوره‌ها</a>
+                <a href="serviceFa.html">برنامه‌ها و خدمات</a>
+                <a href="VerfiyFa.html">تأیید گواهینامه</a>
+                <a href="aboutUsFa.html">درباره ما</a>
+                <a href="partenersFa.html">همکاران ما</a>
+                <a href="contactUsFa.html">تماس با ما</a>
+                <a href="Login.html" id="log-in">ورود</a>
+            </div>
+            <div class="btn-container"><a href="Login.html" class="btn-effect-5">ورود</a></div>
+        </div>
+    </div>
+
+    <div class="container24">
+        <h2>جستجوی گواهینامه با شماره سریال یا کد QR</h2>
+
+        <input type="text" id="searchInput" placeholder="شماره سریال را وارد کنید یا کد QR را اسکن کنید..." oninput="searchCertificate()" />
+
+        <div id="qr-reader"></div>
+
+        <table id="resultTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>نام کامل</th>
+                    <th>عنوان دوره</th>
+                    <th>شعبه صادرکننده</th>
+                    <th>تاریخ و زمان صدور</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+        </table>
+        <div id="notFound" class="not-found" style="display: none;">❌ هیچ گواهینامه‌ای با این شماره سریال یافت نشد.</div>
+    </div>
+    <!-- شروع فوتر -->
+    <footer class="pro-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <h2>مرکز آموزشی آمازون</h2>
+                <p>توانمندسازی شما برای صحبت با جهان — جایی که انگلیسی تنها آغاز راه است.</p>
+            </div>
+
+            <div class="footer-sections">
+                <div class="link-group">
+                    <h3>کاوش</h3>
+                    <a href="indexFa.html">خانه</a>
+                    <a href="blogFa.html">وبلاگ</a>
+                    <a href="coursesFa.html">دوره‌ها</a>
+                    <a href="serviceFa.html">برنامه‌ها و خدمات</a>
+                    <a href="VerfiyFa.html">تأیید گواهینامه</a>
+                </div>
+
+                <div class="link-group">
+                    <h3>شرکت</h3>
+                    <a href="aboutUsFa.html">درباره ما</a>
+                    <a href="partenersFa.html">همکاران ما</a>
+                    <a href="contactUsFa.html">تماس با ما</a>
+                </div>
+
+                <div class="link-group">
+                    <h3>تماس با ما</h3>
+                    <p>📍 کابل، افغانستان</p>
+                    <p>📞 <a href="tel:+93700000000" style="color: gray">+93 700 000 000</a></p>
+                    <p>✉️ <a href="mailto:info@amazone.edu" style="color: gray">info@amazone.edu</a></p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://wa.me/93700000000" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+
+                <div class="link-group">
+                    <h3>خبرنامه</h3>
+                    <p>برای دریافت به‌روزرسانی‌ها و منابع رایگان عضو شوید:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ایمیل شما" required />
+                        <button type="submit">عضویت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 مرکز آموزشی آمازون | طراحی و توسعه توسط محمود</p>
+        </div>
+    </footer>
+    <!-- لینک اسکرول بالا -->
+    <script src="./assets/js/backTop.js"></script>
+    <!-- لینک لودر -->
+    <script src="./assets/js/loder.js"></script>
+    <!-- هدر -->
+    <script src="./assets/js/header.js"></script>
+    <!-- Linking QR code -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <!-- تایید گواهی نامه -->
+    <script src="./assets/js/verfiy.js"></script>
+    <!-- اسکریپت زبان -->
+    <script src="./assets/js/lang.js"></script>
+</body>
+</html>
