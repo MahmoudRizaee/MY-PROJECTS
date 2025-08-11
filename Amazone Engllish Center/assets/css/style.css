@@ -381,6 +381,7 @@ button {
     justify-content: start;
     align-items: center;
     margin-top: 7vw;
+    background-image: url(../image/account.png);
 }
 .left-page-one{
     width: 50%;
@@ -403,7 +404,6 @@ button {
 }
 .left-page-one h1{
     background: var(--liner-color);
-    /* border: 2px solid red; */
     background-clip: text;
     color: transparent;
 }
@@ -421,6 +421,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 1051px){
@@ -493,6 +494,9 @@ button {
     color: transparent;
     margin-bottom: 2rem;
 }
+.courses{
+    background-image: url(../image/map.png);
+}
 .courses1-grid11{
     display: flex;
     justify-content: center;
@@ -552,11 +556,13 @@ button {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .page-three{
     width: 100vw;
-    height: 70dvh;
+    max-height: 70dvh;
     display: flex;
+    margin-bottom: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../image/account.png);
 }
 .h2{
     background: var(--liner-color);
@@ -853,6 +859,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../image/map.png);
 }
 .page-six h2{
     background: var(--heading-color);
@@ -1324,10 +1331,10 @@ button:active{
     Footer Style
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     .pro-footer {
-        background: #111;
         color: var(--main-color-four);
         padding: 2rem 2rem 3rem;
         overflow: hidden;
+        background: #000;
     }
     .pro-footer .container {
         max-width: 100vw;
@@ -1704,6 +1711,7 @@ p {
 }
 .blog-last{
     margin-top: 8.5rem;
+    background-image: url(../image/account.png);
 }
 @media (max-width: 1024px) {
     .blog-last{
@@ -1785,6 +1793,7 @@ select {
     gap: 40px;
     height: auto;
     width: 100%;
+    background-image: url(../image/map.png);
 }
 .courses-list {
     margin: 0 auto;
@@ -1926,13 +1935,16 @@ form button {
     }
 }
 /* Verfiy section */
+.verf{
+    background-image: url(../image/account.png);
+}
 .container24 {
     max-width: 720px;
     margin: auto;
     margin-top: 10rem;
     margin-bottom: 5rem;
     padding: 30px;
-    background: #ffffff;
+    background-image: url(../image/map.png);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -2034,6 +2046,7 @@ tr:last-child td {
   /* About part */
 .about-hole{
     margin: 10rem 13rem;
+    background-image: url(../image/map.png);
 }
 .About-h2 {
     background: var(--liner-color);
@@ -2104,7 +2117,7 @@ tr:last-child td {
 /* Services Section */
 .services-section {
     padding: 80px 20px;
-    background:var(--main-color-two);
+    background-image: url(../image/account.png);
     margin-bottom: -3rem;
     margin-top: 10rem;
 }
@@ -2244,6 +2257,7 @@ tr:last-child td {
     background: var(--main-color-two);
     padding: 50px 40px;
     border-radius: 25px;
+    background-image: url(../image/account.png);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 .partners-header {
@@ -2322,8 +2336,7 @@ tr:last-child td {
 .contact-container {
     max-width: 1200px;
     margin: 10rem auto;
-    /* margin-top: 2rem; */
-    background: #fff;
+    background-image: url(../image/map.png);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
