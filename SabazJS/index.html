@@ -7,9 +7,36 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <style>
+            .text{
+                background: linear-gradient(90deg, #00f5a0, #00d2ff, #7b61ff, #ff4d6d);
+                background-clip: text;
+                color: transparent;
+                transform: rotate(-90deg);
+                animation: glidef 10s infinite;
+            }
+            @keyframes glidef {
+                0% {
+                    background-position: 0% , 50%;
+                }
+                50% {
+                    background-position: 100% , 50%;
+                }
+            }
+        </style>
     </head>
     <body>
-        <h1> Mahmoud with Professional JavaScript</h1>
+        <h1 class="text"> Mahmoud </h1>
+        <section>
+            <p>Hello Developers this is a example of a CSS Cascting Style Sheet:</p>
+            <h1>First Heading</h1>
+            <h2>Second Heading</h2>
+            <h1>Type One Third Heading</h1>
+        </section>
+        <h1>This is the end of Heading</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, dolorum?
+        </p>
         <script src="./script.js" async defer></script>
     </body>
 </html>
