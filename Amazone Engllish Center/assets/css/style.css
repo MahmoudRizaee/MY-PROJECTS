@@ -15,7 +15,24 @@
     --heading-color: #1e1926;
     --paragraph-color: #6b6b6b;
     --animation-delay: 0.3s;
+    scrollbar-width: thin !important;
+    scrollbar-color: #f2d03b #333745;
 }
+
+/* ScrollBar Customization */
+/* -------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #333745;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: #f2d03b;
+    border-radius: 15px;
+}
+/* --------------------- */
 body{
     overflow-x: hidden;
 }
