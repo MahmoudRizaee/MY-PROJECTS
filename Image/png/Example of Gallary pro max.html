@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documennt</title>
+  <style>
+      body{
+        background-color: black;
+        color: white;
+        
+      }
+      form fieldset{
+        border-radius: 20px;
+        color: rgb(250, 83, 111);
+      }
+      form fieldset legend{
+        color: rgb(13, 0, 255);
+        border: 1px solid ;
+        border-color: white;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      input{
+        border-radius: 20px;
+        padding: 10px;
+        background-color: rgba(143, 143, 143, 0.4);
+      }
+
+
+      .container{
+        margin: 100px 0 0 200px;
+        width: 75%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .container img {
+        width: 10%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        transition: all ease-in-out 0.5s;
+      }
+      .container img:hover {
+        width: 100%;
+      }
+      .img img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #dfdfdf;
+      }
+  </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+          <br>
+          <legend>Personal Information</legend>
+            First Name : <input type="text" name="" id="" placeholder="FullName" ><br><br>
+            Last Name : <input type="text" placeholder="LastName"><br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+          <br>
+          <legend>Contact</legend>   
+            Phone : <input type="tel" placeholder="0093*********"><br><br>
+            Email : <input type="email" placeholder="***@gmail.com"><br><br>
+        </fieldset>
+    </form>
+    <!-- <div class="img">
+        <img src="../../image/profile.webp" alt="">
+        <input type="file">
+    </div> -->
+    <div class="container">
+        <img src="../images/cars/bayer whtite.jpg" alt="">
+        <img src="../images/cars/bmworange.jpg" alt="">
+        <img src="../images/cars/farari black.jpg" alt="">
+        <img src="../images/cars/farari blackj.jpg" alt="">
+        <img src="../images/cars/farariback.jpg" alt="">
+    </div>
+    <!-- <script src="./test1.js"></script> -->
+</body>
+</html>
